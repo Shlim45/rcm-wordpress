@@ -1,0 +1,252 @@
+.Project_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 75px;
+}
+
+.Project_callout {
+    color: rgb(var(--callout-rgb));
+    font-weight: 700;
+}
+
+.Project_heading {
+    display: block;
+    font-size: 2rem;
+    letter-spacing: .25rem;
+    margin: 2rem 2rem 1rem;
+}
+
+.Project_subHeading {
+    font-style: italic;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.Project_project {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    max-height: 80vh;
+}
+
+.Project_mainImage {
+    margin: 0 auto 2rem;
+    position: relative;
+    width: 900px;
+    height: 600px;
+}
+
+.Project_thumbControls {
+    display: flex;
+    width: 1000px;
+}
+
+.Project_scrollButton {
+    width: 40px;
+    height: 40px;
+    align-self: center;
+    border: none;
+    border-radius: 5px;
+    background-color: inherit;
+    color: var(--primary-color);
+    font-size: 2rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.Project_thumbContainer {
+    display: flex;
+    justify-content: flex-start;
+    width: 900px;
+    margin: auto;
+}
+
+.Project_thumb {
+    cursor: pointer;
+    margin-right: .5rem;
+    border: 3px solid transparent;
+}
+
+.Project_selected {
+    border: 3px solid var(--primary-color);
+}
+
+.Project_card {
+    width: 300px;
+    height: 500px;
+    cursor: pointer;
+}
+
+.Project_card a {
+    color: var(--primary-color);
+}
+
+.Project_image {
+    width: auto;
+    height: 300px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+
+.Project_image>.Project_description {
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.Project_content {
+    padding: 1rem;
+}
+
+.Project_content>.Project_item {
+    padding: .5rem;
+}
+
+.Project_main a {
+    padding: 2rem;
+}
+
+@media (hover:hover) and (pointer:fine) {
+    .Project_image>.Project_description {
+        display: none;
+        background-color: none;
+    }
+
+    .Project_image:hover>.Project_description {
+        display: inline-block;
+        background-color: rgba(0, 0, 0, .5);
+    }
+
+    .Project_main a {
+        transition: all .15s ease-in-out;
+    }
+
+    .Project_main a:hover {
+        color: rgb(var(--callout-rgb));
+    }
+
+    .Project_card a {
+        transition: all .15s ease-in-out;
+    }
+
+    .Project_card a:hover {
+        color: rgb(var(--foreground-rgb));
+    }
+
+    .Project_scrollButton {
+        cursor: pointer;
+        transition: all .15s ease-in-out;
+    }
+
+    .Project_scrollButton:hover {
+        transform: scale(150%);
+    }
+}
+
+@media (max-width:700px) {
+    .Project_heading {
+        font-size: 1.6rem;
+        margin: .5rem;
+    }
+
+    .Project_subHeading {
+        font-size: 1.2rem;
+    }
+
+    .Project_project {
+        width: 100%;
+    }
+
+    .Project_mainImage {
+        width: 100%;
+        border: 1px dotted #fff;
+    }
+
+    .Project_thumbControls {
+        width: 100%;
+    }
+
+    .Project_scrollButton {
+        padding: 0 .5rem;
+        height: 30px;
+        font-size: 1.2rem;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+    }
+
+    .Project_scrollButton:disabled {
+        color: grey;
+    }
+
+    .Project_thumb {
+        width: 23.25%;
+        height: auto;
+    }
+
+    .Project_main a {
+        padding: 2rem;
+        color: rgb(var(--callout-rgb));
+    }
+}
+
+@media (min-width:701px) and (max-width:999px) {
+    .Project_heading {
+        margin: 2rem 2rem 1rem;
+    }
+
+    .Project_subHeading {
+        font-style: italic;
+        font-weight: 300;
+        margin-bottom: 1rem;
+    }
+
+    .Project_project {
+        width: 100%;
+    }
+
+    .Project_mainImage {
+        width: 90%;
+    }
+
+    .Project_mainImage>img {
+        width: 100%;
+        height: auto;
+    }
+
+    .Project_thumbControls {
+        width: 100%;
+    }
+
+    .Project_scrollButton {
+        padding: 0 .5rem;
+        height: 30px;
+        font-size: 1.2rem;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+    }
+
+    .Project_thumb {
+        width: 24%;
+        height: auto;
+    }
+
+    .Project_content {
+        padding: 1rem;
+    }
+
+    .Project_description {
+        font-size: .8rem;
+    }
+
+    .Project_main a {
+        padding: 2rem;
+        color: rgb(var(--callout-rgb));
+    }
+}

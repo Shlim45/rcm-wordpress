@@ -1,0 +1,372 @@
+.ImageAsideText_container__XN24j {
+    display: flex;
+        flex-direction: column;
+    min-height: 400px;
+}
+
+/* featured image */
+.wp-post-image {
+    object-fit: cover;
+    object-position: center;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    box-shadow: 10px 7px 14px rgba(0, 0, 0, .75);
+}
+
+.limited-height-post-image {
+    max-height: 460px;
+}
+
+/* thumbnail container */
+.wp-block-gallery {}
+
+/* thumbnails */
+.wp-block-image {
+    cursor: pointer;
+}
+
+.widget-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--rcm-green);
+}
+.ImageAsideText_content__QxxPx {
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    position: relative;
+}
+
+.ImageAsideText_heading__b19yR {
+    font-size: 2rem;
+    font-weight: 600;
+    padding-bottom: 1.5rem;
+    text-align: center;
+    color: var(--rcm-green);
+    line-height: 2.5rem;
+}
+
+.ImageAsideText_text__yl2qG {
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: rgb(var(--foreground-rgb));
+    position: relative;
+    line-height: 2rem;
+    letter-spacing: .25ch;
+}
+
+.ImageAsideText_content__QxxPx a {
+    color: var(--rcm-green);
+    padding: .5rem;
+    font-size: 1.5rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.ImageAsideText_icon__Q6ofs {
+    font-size: .9rem;
+    color: rgba(var(--foreground-rgb), .6);
+    cursor: pointer;
+    padding: 5rem;
+}
+
+.ImageAsideText_icon__Q6ofs>svg {
+    color: var(--rcm-green-60);
+}
+
+.ImageAsideText_heading__b19yR,
+.ImageAsideText_icon__Q6ofs,
+.ImageAsideText_icon__Q6ofs>svg {
+    transition: all .15s ease-in-out;
+}
+
+@media (hover:hover) and (pointer:fine) {
+    .ImageAsideText_container__XN24j:hover .ImageAsideText_heading__b19yR {
+        transform: scale(105%);
+        text-shadow: 10px 7px 5px rgba(0, 0, 0, .75);
+    }
+
+    .ImageAsideText_content__QxxPx:hover .ImageAsideText_icon__Q6ofs {
+        color: rgba(var(--foreground-rgb), 1);
+    }
+
+    .ImageAsideText_content__QxxPx:hover .ImageAsideText_icon__Q6ofs>svg {
+        color: var(--rcm-green);
+    }
+}
+
+@media (prefers-reduced-motion) {
+
+    .ImageAsideText_icon__Q6ofs,
+    .ImageAsideText_icon__Q6ofs>svg {
+        transition: none;
+    }
+
+    .ImageAsideText_container__XN24j:hover .ImageAsideText_heading__b19yR {
+        transform: none;
+        text-shadow: none;
+    }
+}
+
+@media (prefers-color-scheme:light) {
+    .ImageAsideText_heading__b19yR {
+        color: var(--rcm-green-60);
+        text-shadow: 0 0 rgba(0, 0, 0, .75);
+    }
+}
+
+@media (prefers-color-scheme:light) and (hover:hover) and (pointer:fine) {
+    .ImageAsideText_container__XN24j:hover .ImageAsideText_heading__b19yR {
+        transform: scale(105%);
+        color: var(--rcm-green);
+        text-shadow: 10px 7px 5px rgba(0, 0, 0, .25);
+    }
+}
+
+@media (max-width:700px) {
+    .ImageAsideText_container__XN24j {
+        grid-template-columns: 1fr;
+        margin: 0;
+        height: auto;
+        padding: 2rem 0;
+    }
+
+    .ImageAsideText_content__QxxPx {
+        padding: 1rem;
+    }
+
+    .ImageAsideText_heading__b19yR {
+        font-size: 1.3rem;
+        padding-bottom: 2rem;
+    }
+
+    .ImageAsideText_text__yl2qG {
+        font-size: 1.1rem;
+        margin-bottom: 1.75rem;
+    }
+
+        .attachment-post-thumbnail {
+        height: auto;
+        max-height: 360px;
+    }
+
+    .ImageAsideText_icon__Q6ofs {
+        padding: 0;
+    }
+}
+
+@media (min-width:701px) and (max-width:1120px) {
+    .ImageAsideText_container__XN24j {
+        padding: 2rem 0;
+        margin: 1rem;
+    }
+
+    .ImageAsideText_content__QxxPx {
+        width: 100%;
+    }
+
+    .ImageAsideText_heading__b19yR {
+        font-size: 1.6rem;
+    }
+
+        .attachment-post-thumbnail {
+        height: auto;
+    }
+
+    .ImageAsideText_text__yl2qG {
+        font-size: 1rem;
+    }
+
+    .ImageAsideText_icon__Q6ofs {
+        padding: 2rem;
+    }
+}
+
+.projects-sidebar {
+    position: fixed;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    top: 150px;
+}
+
+.projects-sidebar li {
+    list-style-type: none;
+}
+
+.projects-sidebar h3 {
+    align-self: center;
+    margin-bottom: 1rem;
+    color: var(--rcm-green);
+}
+
+.projects-sidebar a {
+    border: none;
+    background: inherit;
+    font: inherit;
+    cursor: pointer;
+    color: inherit;
+    transition: color .2s ease-in-out;
+    padding: .25rem;
+}
+
+.projects-sidebar a:hover {
+    color: var(--rcm-green-40);
+}
+
+.ProjectList_navLink__selected__GVzAT {
+    color: var(--rcm-green);
+}
+
+.ProjectList_rightCol__zQIG5 {
+    max-width: var(--max-width);
+    margin: auto auto auto 350px;
+}
+
+.ProjectList_grid__Kz_2O {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-gap: 20px;
+    gap: 20px;
+}
+
+.ProjectList_card__ASta2 {
+    padding: 2rem 1rem;
+    border-radius: var(--border-radius);
+    background: rgba(var(--card-rgb), .2);
+    color: var(--foreground-rgb);
+    border: 1px solid rgba(var(--card-border-rgb), 0);
+    transition: background .2s, border .2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.ProjectList_card__ASta2 span {
+    display: inline-block;
+    transition: transform .2s;
+}
+
+.ProjectList_card__ASta2>h2 {
+    font-size: 2.4rem;
+    margin-bottom: .7rem;
+    text-align: center;
+}
+
+.ProjectList_card__ASta2>h2>span {
+    padding-bottom: .75rem;
+    border-bottom: 1px solid;
+    border-image-slice: 1;
+    border-image-source: var(--green-fade-out);
+    transition: background .2s;
+}
+
+.ProjectList_card__ASta2:hover {
+    background: rgba(var(--card-rgb), .3);
+}
+
+.ProjectList_topLink__spYLf {
+    align-self: center;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    font: inherit;
+    letter-spacing: inherit;
+    cursor: pointer;
+    color: var(--rcm-green);
+    transition: color .2s;
+    padding: .5rem;
+}
+
+.ProjectList_topLink__spYLf:hover {
+    color: var(--foreground-rgb);
+}
+
+@media (prefers-color-scheme:light) {
+    .ProjectList_card__ASta2>h2>span {
+        border-bottom: 1px solid rgba(var(--card-rgb), .2);
+        border-image-source: linear-gradient(90deg, rgba(0, 0, 0, .8), rgba(0, 0, 0, .75), transparent);
+    }
+
+                .projects-sidebar h3,
+    .ProjectList_topLink__spYLf {
+        color: var(--foreground-rgb);
+    }
+
+    .ProjectList_topLink__spYLf:hover {
+        color: var(--rcm-green);
+    }
+}
+
+@media (max-width:700px) {
+    .projects-sidebar {
+        position: relative;
+        margin: auto;
+        align-items: center;
+        padding: 1rem;
+        font-size: 1rem;
+        top: 0;
+    }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                .projects-sidebar a {
+        padding: .25rem;
+    }
+
+    .ProjectList_rightCol__zQIG5 {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .ProjectList_grid__Kz_2O {
+        grid-template-columns: 1fr;
+        margin-bottom: 120px;
+    }
+
+    .ProjectList_card__ASta2 {
+        padding: 1rem;
+    }
+
+    .ProjectList_card__ASta2>h2 {
+        font-size: 1.4rem;
+    }
+
+    .ProjectList_card__image__SMpg5 {
+        max-width: 90vw;
+        height: auto;
+    }
+}
+
+@media (min-width:701px) and (max-width:1120px) {
+    .projects-sidebar {
+        position: relative;
+        margin: auto;
+        align-items: center;
+        padding-bottom: 2rem;
+        font-size: 1.2rem;
+        top: 0;
+    }
+
+    .ProjectList_rightCol__zQIG5 {
+        width: 100%;
+        margin-left: 0;
+    }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                .projects-sidebar a {
+        padding: .25rem;
+        font-size: 1.1rem;
+    }
+
+    .ProjectList_grid__Kz_2O {
+        grid-template-columns: 1fr;
+        margin: auto;
+        display: block;
+    }
+
+    .ProjectList_card__ASta2 {
+        padding: 1rem;
+    }
+}
